@@ -9,6 +9,7 @@ import silicar.tutu.universal.helper.base.BaseModel;
 public class UniversalValue {
     public float value;
     public BaseModel model;
+    public float measureValue;
 
     public UniversalValue() {
     }
@@ -19,6 +20,7 @@ public class UniversalValue {
     }
 
     public float getMeasureValue() {
-        return value * model.getBaseValue();
+        measureValue = value * model.getBaseValue();
+        return measureValue;
     }
 }
